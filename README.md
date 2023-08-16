@@ -14,5 +14,14 @@ Repositorio de métodos estadísticos del semestre Agosto-Diciembre.
  *crear un proyecto clonando el repositorio de Github
  
  *realizar la primera sincronizacion del proyecto y la nube (Github)
- 
+ --------------------------------------------------------------------------------
+ #Actividad 3 hipotesis (nula y alternativa)
+clase 15/08/2023
+
+  #objetivo
+  *saber desarrollar una hipotesis
+
+  *formular declaraciones claras que pueden ser utilizadas en pruebas estadísticas 
+
+  *desarrollar habilidades en los metodos cientificos y la investigación 
  
