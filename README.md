@@ -24,4 +24,5 @@ clase 15/08/2023
   *formular declaraciones claras que pueden ser utilizadas en pruebas estadísticas 
 
   *desarrollar habilidades en los metodos cientificos y la investigación 
+  
  

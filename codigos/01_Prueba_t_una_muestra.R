@@ -12,7 +12,7 @@ head(mediciones) # funcion head (sirve para ver primeros 6 datos)
 
 
 # descriptivas ------------------------------------------------------------
-# medidad de tendencia central media, mediana, ramgo
+# medidad de tendencia central media, mediana, rango
 
 mean(mediciones$alturas)
 median(mediciones$alturas)
@@ -32,13 +32,13 @@ boxplot(mediciones$alturas)
 # Hipotesis ---------------------------------------------------------------
 
 # xobs = 10.17 vs xteo = 11
-# plantas de ceDRO deben alcanzar una altura de 11 cm en un año de acuerdo 
+# plantas de cedro deben alcanzar una altura de 11 cm en un año de acuerdo 
 # a los dichos de viversitaS  
 
 
 # Procedimiento -----------------------------------------------------------
 
-# aplicar la funcion t.test
+# aplicar la funcion t.test 
 
 t.test(mediciones$alturas, mu = 11)
 
