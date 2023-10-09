@@ -74,4 +74,6 @@ y.pr
 
 -1.874 + 0.075*80
 
-
+# EL RANGO DE LOS VALORES DE X SON MI VENTANA DE 
+# prediccion de yprima
+range(erupciones$waiting) 
