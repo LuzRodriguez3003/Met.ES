@@ -1,3 +1,5 @@
+#LERP
+#Correlacion
 #02/10/23
 
 library(repmis)
@@ -41,5 +43,35 @@ var(erupciones$waiting) # 184.8233
 
 plot(erupciones$waiting, erupciones$eruptions, xlab = "Tiempo de espera entre erupciones (min)",
      ylab = "Duración de las erupciones (min)", pch = 19)
+# abline sirve para despegar la linea de tendencia central    
+abline(erup.lm,
+       col= "red")
+range(erupciones$waiting)
+       
+
+# R lineal ----------------------------------------------------------------
+
+erup.lm <- lm (erupciones$eruptions ~ erupciones$waiting)
+
+erup.lm # obtenemos el valor de alfa y beta
+
+summary(erup.lm) # obtenemos la significancia
+
+erupciones$yprima <- -1.874 + 0.075*erupciones$waiting
+erupciones$estimados <- erup.lm$fitted.values
+
+
+
+erup <- c(80, 43, 45, 53, 61, 95)
+y.pr <- -1.874 + 0.075*erup
+erup
+y.pr
+
+
+# Aplicar la formula de manera individual ---------------------------------
+
+#alfa + beta * valor de x
+
+-1.874 + 0.075*80
 
 
