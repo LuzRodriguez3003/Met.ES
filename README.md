@@ -6,48 +6,48 @@ Repositorio de métodos estadísticos del semestre Agosto-Diciembre.
  clase 1: 07/08/2023
  -------------------------------------------------------------------------------
  
- #Actividad 2 configurar Git y Github, crear proyecto
+ # Actividad 2 configurar Git y Github, crear proyecto
  
  #objetivo
- *configurar el nombre de usario y correo electronico en la cuenta de Git
++ :dart: configurar el nombre de usario y correo electronico en la cuenta de Git
  
- *crear un proyecto clonando el repositorio de Github
++ :dart: crear un proyecto clonando el repositorio de Github
  
- *realizar la primera sincronizacion del proyecto y la nube (Github)
++ :dart: realizar la primera sincronizacion del proyecto y la nube (Github)
  --------------------------------------------------------------------------------
- #Actividad 3 hipotesis (nula y alternativa)
+ # Actividad 3 hipotesis (nula y alternativa)
 clase 15/08/2023
 
   #objetivo
-  *saber desarrollar una hipotesis
++ :dart: saber desarrollar una hipotesis
 
-  *formular declaraciones claras que pueden ser utilizadas en pruebas estadísticas 
++ :dart: formular declaraciones claras que pueden ser utilizadas en pruebas estadísticas 
 
-  *desarrollar habilidades en los metodos cientificos y la investigación 
++ :dart: desarrollar habilidades en los metodos cientificos y la investigación 
 ====
   ---------------------------------------------------------------------------------
-  #Actividad 4 importar datos, descriptivas, graficas
+  # Actividad 4 importar datos, descriptivas, graficas
   clase:  21/08/2023
 
   #objetivos
-  *importar datos csv a R
++ :dart: importar datos csv a R
 
- *saber sacar medidas de tendencia central, media, mediana y rango 
++ :dart: saber sacar medidas de tendencia central, media, mediana y rango 
 
- *hacer un Boxplot
++ :dart: hacer un Boxplot
 
  -----------------------------------------------------------------------------------
 
- #Actividad 5 Hipotesis, aplicar la funcion t.test, replicabilidad
+ # Actividad 5 Hipotesis, aplicar la funcion t.test, replicabilidad
  22/08/2023
 
  #objetivo
 
- *usar formulas para respónder una hipoteis
++ :dart: usar formulas para respónder una hipoteis
 
- *aplicar la funcion t.test
++ :dart: aplicar la funcion t.test
 
- *formulas para guardar la prueba t.tes 
++ :dart: formulas para guardar la prueba t.tes 
 >>>>>>> cac00a0f52d56c2c7edd423b193a6f7aa4476479
   
  

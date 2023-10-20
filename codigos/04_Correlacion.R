@@ -26,5 +26,5 @@ cor.test(canopy$Cnpy, canopy$LAI4)
 plot(canopy$Cnpy, canopy$LAI4)
      xlab = "Apertura dosel (%)"
      ylab = "Area Foliar"
-     col = 
+     
  
