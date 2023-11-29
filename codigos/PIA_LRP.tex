@@ -1,0 +1,563 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={PIA\_LRP.R},
+  pdfauthor={Usuario},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{PIA\_LRP.R}
+\author{Usuario}
+\date{2023-11-28}
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#LUZ ELENA RODRÍGUEZ PEQUEÑO}
+\CommentTok{\#2070472}
+\CommentTok{\#28/11/23}
+\CommentTok{\#PIA}
+
+
+\CommentTok{\# Importar {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\FunctionTok{setwd}\NormalTok{(}\StringTok{"C:/Repositorio\_LR/Met\_ES/codigos"}\NormalTok{)}
+\NormalTok{climas }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"climas.csv"}\NormalTok{, }\AttributeTok{header =} \ConstantTok{TRUE}\NormalTok{) }
+\FunctionTok{head}\NormalTok{(climas)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Tmax Tmin
+## 1 37.8 24.9
+## 2 38.8 18.6
+## 3 28.2 10.1
+## 4 19.5 11.6
+## 5  0.0  0.0
+## 6 33.8 20.8
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# descriptivas {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+\CommentTok{\# medidad de tendencia central media, mediana, rango}
+\CommentTok{\#Tmax}
+\FunctionTok{mean}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax) }\CommentTok{\#28.65161}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 28.65161
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{median}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax) }\CommentTok{\#32.3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 32.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{range}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax) }\CommentTok{\#0.0 39.3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1]  0.0 39.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Tmin}
+
+\FunctionTok{mean}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmin) }\CommentTok{\#16.53871}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 16.53871
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{median}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmin) }\CommentTok{\#18.6}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 18.6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{range}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmin) }\CommentTok{\#0.0 39.3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1]  0.0 24.9
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# medidad de dispersion desviacion estandar, varianza {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+\CommentTok{\#Tmax}
+\FunctionTok{sd}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax) }\CommentTok{\#9.005068}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 9.005068
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax)}\CommentTok{\#81.09125}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 81.09125
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Tmin}
+\FunctionTok{sd}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmin) }\CommentTok{\#5.429775}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 5.429775
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmin) }\CommentTok{\#29.48245}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 29.48245
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Grafica {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\FunctionTok{boxplot}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{PIA_LRP_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{boxplot}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmin)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{PIA_LRP_files/figure-latex/unnamed-chunk-1-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Hipotesis {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\CommentTok{\#Tmax = 33 vs Tmin = 18.6}
+\CommentTok{\#La temperaturas han incrmentado hasta 33 grados según la estación meteorologica de la facultad por lo que es una hipotesis alternativa }
+
+
+\CommentTok{\# Procedimiento {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\FunctionTok{t.test}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax, }\AttributeTok{mu =} \DecValTok{33}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  One Sample t-test
+## 
+## data:  climas$Tmax
+## t = -2.6886, df = 30, p-value = 0.0116
+## alternative hypothesis: true mean is not equal to 33
+## 95 percent confidence interval:
+##  25.34853 31.95470
+## sample estimates:
+## mean of x 
+##  28.65161
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#t = {-}2.6886, df = 30, p{-}value = 0.0116}
+\FunctionTok{t.test}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax, }\AttributeTok{mu =} \FloatTok{32.5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  One Sample t-test
+## 
+## data:  climas$Tmax
+## t = -2.3794, df = 30, p-value = 0.0239
+## alternative hypothesis: true mean is not equal to 32.5
+## 95 percent confidence interval:
+##  25.34853 31.95470
+## sample estimates:
+## mean of x 
+##  28.65161
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#t = {-}2.3794, df = 30, p{-}value = 0.0239}
+\FunctionTok{t.test}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax, }\AttributeTok{mu =} \FloatTok{32.6}\NormalTok{) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  One Sample t-test
+## 
+## data:  climas$Tmax
+## t = -2.4413, df = 30, p-value = 0.02075
+## alternative hypothesis: true mean is not equal to 32.6
+## 95 percent confidence interval:
+##  25.34853 31.95470
+## sample estimates:
+## mean of x 
+##  28.65161
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#t = {-}2.4413, df = 30, p{-}value = 0.02075}
+\FunctionTok{t.test}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax, }\AttributeTok{mu =} \FloatTok{16.5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  One Sample t-test
+## 
+## data:  climas$Tmax
+## t = 7.5132, df = 30, p-value = 2.243e-08
+## alternative hypothesis: true mean is not equal to 16.5
+## 95 percent confidence interval:
+##  25.34853 31.95470
+## sample estimates:
+## mean of x 
+##  28.65161
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#t = 7.5132, df = 30, p{-}value = 2.243e{-}08}
+
+
+\CommentTok{\# Recapibilidad {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\CommentTok{\#Guardar la prueba t en un objeto llamado "prueba"}
+\NormalTok{prueba }\OtherTok{\textless{}{-}} \FunctionTok{t.test}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax, }\AttributeTok{mu =}\DecValTok{33}\NormalTok{)}
+
+\CommentTok{\#Conocer el p{-}value}
+\NormalTok{prueba}\SpecialCharTok{$}\NormalTok{p.value }\CommentTok{\#0.01159886}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.01159886
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Conocer los grados de libertad }
+\NormalTok{prueba}\SpecialCharTok{$}\NormalTok{parameter }\CommentTok{\#df }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## df 
+## 30
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DecValTok{30}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 30
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Conocer intervalos de confianza }
+\NormalTok{prueba}\SpecialCharTok{$}\NormalTok{conf.int }\CommentTok{\#0.95}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 25.34853 31.95470
+## attr(,"conf.level")
+## [1] 0.95
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Correlación {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+\FunctionTok{cor.test}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax, climas}\SpecialCharTok{$}\NormalTok{Tmin)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Pearson's product-moment correlation
+## 
+## data:  climas$Tmax and climas$Tmin
+## t = 8.3631, df = 29, p-value = 3.225e-09
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  0.6928424 0.9207906
+## sample estimates:
+##       cor 
+## 0.8407716
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#t=8.3631, df = 29, p{-}value = 3.225e{-}09}
+\CommentTok{\# cor 0.8407716 }
+\CommentTok{\#¿Es significativa la correlación?}
+\CommentTok{\# Si porque es mayor que 0.5 por lo que no se puede rechazar}
+
+\CommentTok{\#estadisticas descriptivas}
+\FunctionTok{mean}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax) }\CommentTok{\#28.65161}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 28.65161
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmin) }\CommentTok{\#16.53871}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 16.53871
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sd}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax) }\CommentTok{\# 9.005068}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 9.005068
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sd}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmin) }\CommentTok{\#5.429775}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 5.429775
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax)}\CommentTok{\#81.09125}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 81.09125
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmin) }\CommentTok{\#29.48245}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 29.48245
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Grafica {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\FunctionTok{plot}\NormalTok{(climas}\SpecialCharTok{$}\NormalTok{Tmax, climas}\SpecialCharTok{$}\NormalTok{Tmax, }\AttributeTok{xlab =} \StringTok{"Tmx"}\NormalTok{, }
+     \AttributeTok{ylab =} \StringTok{"Tmin"}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{PIA_LRP_files/figure-latex/unnamed-chunk-1-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# R Lineal {-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}}
+
+\NormalTok{climas.lm }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{ (climas}\SpecialCharTok{$}\NormalTok{Tmax }\SpecialCharTok{\textasciitilde{}}\NormalTok{ climas}\SpecialCharTok{$}\NormalTok{Tmin)}
+
+\NormalTok{climas.lm }\CommentTok{\# obtenemos el valor de alfa y beta}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = climas$Tmax ~ climas$Tmin)
+## 
+## Coefficients:
+## (Intercept)  climas$Tmin  
+##       5.590        1.394
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(climas.lm) }\CommentTok{\# obtenemos la significancia}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = climas$Tmax ~ climas$Tmin)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -10.4456  -2.8527   0.2487   2.8256   9.4096 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)   5.5903     2.8978   1.929   0.0635 .  
+## climas$Tmin   1.3944     0.1667   8.363 3.22e-09 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 4.959 on 29 degrees of freedom
+## Multiple R-squared:  0.7069, Adjusted R-squared:  0.6968 
+## F-statistic: 69.94 on 1 and 29 DF,  p-value: 3.225e-09
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{climas}\SpecialCharTok{$}\NormalTok{yprima }\OtherTok{\textless{}{-}} \FloatTok{5.590} \SpecialCharTok{+} \FloatTok{1.394}\SpecialCharTok{*}\NormalTok{climas}\SpecialCharTok{$}\NormalTok{Tmax}
+\NormalTok{climas}\SpecialCharTok{$}\NormalTok{estimados }\OtherTok{\textless{}{-}}\NormalTok{ climas.lm}\SpecialCharTok{$}\NormalTok{fitted.values}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}
