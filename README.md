@@ -49,5 +49,30 @@ clase 15/08/2023
 
 + :dart: formulas para guardar la prueba t.tes 
 >>>>>>> cac00a0f52d56c2c7edd423b193a6f7aa4476479
+
+-----------------------------------------------------------------------------------
+#ACTIVIDAD 6 creación de datos independientes 
+clase 6: 28/08/2023
+
+#objetivos
+
+*se inbstalo un paquete para facilitar los datos y visualizarlos mejor
+
+*se explicó como se resumian los datos y se hicieron graficas para comparar 
+
+-----------------------------------------------------------------------------------
+#ACTIVIDAD 7 Correlación 
+clase 7: 25/09/2023
+#objetivos
+
+*se aprendió a hacer la correlación
+
+-----------------------------------------------------------------------------------
+#ACTIVIDAD  8 PIA
+clase 8: 28/11/2023
+
+*se utilizaron todos los codigos aprendidos en clase para la elaboración del PIA
+
+
   
  
