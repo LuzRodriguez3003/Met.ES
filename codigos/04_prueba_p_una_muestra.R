@@ -1,4 +1,7 @@
-
+# Luz Elena Rodriguez Pequeño
+# 18/09/2023
+# Matricula: 2070472
+#correlación
 
 # Importar ----------------------------------------------------------------
 

@@ -26,10 +26,6 @@ Fert <- tratamientos %>%
 mean(Ctrl$Alturas)
 mean(Fert$Alturas)
 
-a <- Alturas %>%
-  filter(Tratamiento == "a")
-b <- Alturas %>%
-  filter(Tratamiento == "b")
 
 Alturas %>% 
   group_by(Tratamiento) %>% 
