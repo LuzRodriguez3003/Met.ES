@@ -1,0 +1,16 @@
+
+
+! Sorry, but "MiKTeX Configuration Utility" did not succeed for the following reason:
+
+!   MiKTeX could not remove the file 'C:\Users\Usuario\AppData\Local\MiKTeX\miktex\data\le\9201e986683dc7fea88c7f507182df26.fndb-5'.
+
+! Remedy:
+
+!   Close running MiKTeX programs and try again.
+
+! For more information, visit: https://miktex.org/kb/fix-file-in-use
+
+! Sorry, but "MiKTeX Configuration Utility" did not succeed.
+
+! Sorry, but C:\PROGRA~1\MiKTeX\miktex\bin\x64\pdflatex.exe did not succeed.
+! pdflatex: major issue: So far, you have not checked for MiKTeX updates.
